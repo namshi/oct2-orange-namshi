@@ -13,7 +13,7 @@
 
 
     html {
-      background: #262C33 url("../images/background.png");
+      background: #262C33 url("../images/background.jpeg");
       background-attachment: fixed;
     }
 
@@ -99,6 +99,10 @@
 
 	aside.sidebar a { text-decoration: none; }
 
+	aside.sidebar:hover a {
+		color: inherit;
+	}
+
 	.toggle-sidebar{display: none;}
 
 	ul#gh_repos > li > a{
@@ -169,6 +173,7 @@
 	        -moz-border-radius-topright: 0.4em;
 	      -webkit-border-radius: 0.4em 0.4em 0 0;
 	            border-radius: 0.4em 0.4em 0 0;
+	            box-shadow: 0 0 5px #bdbdbd;
 	      }
 
 	        #content{
@@ -183,4 +188,52 @@
 	        border-radius: 6px;
 	  }
 	  }
+
+	  /*------------ Namshi Specific    -----------*/
+	  
+	  [data-page*='/team/'] {
+		img.team {
+		  	width: 180px;
+		}
+		p {
+			overflow: hidden;
+		}
+		li {
+			list-style: none;
+		}
+	  }
+
+	  .entry-content blockquote {
+	  	overflow: hidden;
+	  }
+
+	  .entry-content .sharing {
+		padding: 10px 0;
+	  }
+
+	  img#logo {
+	  	border: none;
+	  	box-shadow: none;
+	  	margin-top: 30px;
+	  }
+
+	  section#titles {
+	  	text-align: center;
+	  }
+	  
+	  section#menu li i {
+		margin-right: 20px;
+		ul {
+			text-align: left;
+			li a {
+				margin-left: 10px;
+			}
+		}
+	  }
+
+	  section#social >  a {
+	  	margin: 0 1em;
+	  }
+
+
 
